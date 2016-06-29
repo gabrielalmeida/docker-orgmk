@@ -6,7 +6,7 @@ MAINTAINER Gabriel Almeida<gabriel_almeida@me.com>
 RUN apk add --update -t build-deps tar curl && \
 apk add -t deps --update-cache --allow-untrusted \
 --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
-make emacs texlive-full
+make emacs
 
 # Download & install orgmk
 RUN mkdir orgmk \

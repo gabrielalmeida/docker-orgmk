@@ -14,6 +14,11 @@ Or via `orgmk.sh`:
 
 `$ sh orgmk.sh html source.org`
 
+### LaTeX not available
+
+Orgmk requires `LaTeX` to be able to export to PDF. It's currently not available
+due to `texlive` issues on Alpine Linux. Check [#1](https://github.com/gabrielalmeida/docker-orgmk/issues/1).
+
 ### License
 
 MIT
