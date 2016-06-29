@@ -11,6 +11,6 @@ fi
 
 
 FILE=$(basename $2)
-docker run -it -v "$2:/tmp/${FILE}" gabrielalmeida/orgmk "org2$1" "${@:3}" "/tmp/$FILE"
+docker run --rm -v "$PWD:/tmp" gabrielalmeida/orgmk "org2$1" "${@:3}" "/tmp/$FILE"
 
 echo "\n\n✅  Done! If no errors ocurred the file should have been exported to the same path of the source file"
